@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/news-and-events",
+      "handler": "news-and-event.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/news-and-events/count",
+      "handler": "news-and-event.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/news-and-events/:id",
+      "handler": "news-and-event.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/news-and-events",
+      "handler": "news-and-event.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/news-and-events/:id",
+      "handler": "news-and-event.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/news-and-events/:id",
+      "handler": "news-and-event.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

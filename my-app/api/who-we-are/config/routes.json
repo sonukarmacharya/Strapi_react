@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/who-we-ares",
+      "handler": "who-we-are.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/who-we-ares/count",
+      "handler": "who-we-are.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/who-we-ares/:id",
+      "handler": "who-we-are.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/who-we-ares",
+      "handler": "who-we-are.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/who-we-ares/:id",
+      "handler": "who-we-are.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/who-we-ares/:id",
+      "handler": "who-we-are.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

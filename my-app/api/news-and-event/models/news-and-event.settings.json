@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_and_events",
+  "info": {
+    "name": "News and event"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Title": {
+      "type": "text",
+      "required": true,
+      "unique": false
+    },
+    "Desc": {
+      "type": "richtext",
+      "required": true
+    },
+    "Date": {
+      "type": "date"
+    }
+  }
+}

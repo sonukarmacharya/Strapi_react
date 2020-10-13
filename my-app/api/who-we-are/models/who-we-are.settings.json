@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "who_we_ares",
+  "info": {
+    "name": "Who we are"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Desc": {
+      "type": "richtext"
+    }
+  }
+}
